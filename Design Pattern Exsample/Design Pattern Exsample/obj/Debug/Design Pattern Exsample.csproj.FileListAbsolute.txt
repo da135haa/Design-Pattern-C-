@@ -4,3 +4,9 @@ E:\visual studio 2015\Projects\Design Pattern Exsample\Design Pattern Exsample\b
 E:\visual studio 2015\Projects\Design Pattern Exsample\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.csprojResolveAssemblyReference.cache
 E:\visual studio 2015\Projects\Design Pattern Exsample\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.exe
 E:\visual studio 2015\Projects\Design Pattern Exsample\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.pdb
+C:\Users\da135\Desktop\DesignPattern_C#_github\Design Pattern Exsample\Design Pattern Exsample\bin\Debug\Design Pattern Exsample.exe.config
+C:\Users\da135\Desktop\DesignPattern_C#_github\Design Pattern Exsample\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.exe
+C:\Users\da135\Desktop\DesignPattern_C#_github\Design Pattern Exsample\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.pdb
+C:\Users\da135\Desktop\DesignPattern_C#_github\Design Pattern Exsample\Design Pattern Exsample\bin\Debug\Design Pattern Exsample.exe
+C:\Users\da135\Desktop\DesignPattern_C#_github\Design Pattern Exsample\Design Pattern Exsample\bin\Debug\Design Pattern Exsample.pdb
+C:\Users\da135\Desktop\DesignPattern_C#_github\Design Pattern Exsample\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.csprojResolveAssemblyReference.cache

@@ -10,16 +10,16 @@ using System.Threading.Tasks;
 
 namespace Design_Pattern_Exsample
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            PeopleControl sp = new PeopleControl(new Man());
-            sp.doWork();
-            sp.setPeople(new Girl());
-            sp.doWork();
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        PeopleControl sp = new PeopleControl(new Man());
+    //        sp.doWork();
+    //        sp.setPeople(new Girl());
+    //        sp.doWork();
 
-            Console.Read();
-        }
-    }
+    //        Console.Read();
+    //    }
+    //}
 }
