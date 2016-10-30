@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandPattern\Command.cs" />
+    <Compile Include="FactoryMethodPattern\FactoryMethod.cs" />
     <Compile Include="FactoryPattern\Factory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
