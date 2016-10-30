@@ -17,6 +17,7 @@ namespace Design_Pattern_Exsample.FactoryMethodPattern
         簡單來說就是,分成很多個工廠,各個工廠都有自己製作的東西
         我們看需要什麼物品再選擇哪個工廠來用
 
+        工廠是依照物品的種類來區分
     */
     class FactoryMethod
     {
@@ -28,11 +29,11 @@ namespace Design_Pattern_Exsample.FactoryMethodPattern
 
         //    toyManager = new ToyManagerAdult();//只修改了工廠就可以得到不同的結果
         //    toy = toyManager.CreateToy();
-        //    toy.getToy();
+        //    toy.makeToy();
 
         //    toyManager = new ToyManagerChildern();
         //    toy = toyManager.CreateToy();
-        //    toy.getToy();
+        //    toy.makeToy();
 
         //    Console.ReadLine();
         //}
@@ -63,19 +64,19 @@ namespace Design_Pattern_Exsample.FactoryMethodPattern
     //一個介面,多個實作
     interface Toy
     {
-        void getToy();
+        void makeToy();
     }
 
     class AdultToy : Toy
     {
-        public void getToy()
+        public void makeToy()
         {
             Console.WriteLine("得到一隻按摩棒");
         }
     }
     class ChildrenToy : Toy
     {
-        public void getToy()
+        public void makeToy()
         {
             Console.WriteLine("得到一台玩具車");
         }
