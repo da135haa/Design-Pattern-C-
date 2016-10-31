@@ -22,26 +22,26 @@ namespace Design_Pattern_Exsample.AbstractFactoryPattern
     */
     class AbstractFactory
     {
-        static void Main(string[] args)
-        {
-            ToyManagerOrigin toyManager;
-            ToyCar toyCar;
-            ToyStick toyStick;
+        //static void Main(string[] args)
+        //{
+        //    ToyManagerOrigin toyManager;
+        //    ToyCar toyCar;
+        //    ToyStick toyStick;
 
-            toyManager = new ToyManager_A();//使用A牌的工廠,所製造出來的東西都會是A牌的
-            toyCar = toyManager.CreateCarToy();
-            toyStick = toyManager.CreateStickToy();
-            toyCar.makeToy();
-            toyStick.makeToy();
+        //    toyManager = new ToyManager_A();//使用A牌的工廠,所製造出來的東西都會是A牌的
+        //    toyCar = toyManager.CreateCarToy();
+        //    toyStick = toyManager.CreateStickToy();
+        //    toyCar.makeToy();
+        //    toyStick.makeToy();
 
-            toyManager = new ToyManager_B();//使用B牌的工廠,所製造出來的東西都會是A牌的
-            toyCar = toyManager.CreateCarToy();
-            toyStick = toyManager.CreateStickToy();
-            toyCar.makeToy();
-            toyStick.makeToy();
+        //    toyManager = new ToyManager_B();//使用B牌的工廠,所製造出來的東西都會是A牌的
+        //    toyCar = toyManager.CreateCarToy();
+        //    toyStick = toyManager.CreateStickToy();
+        //    toyCar.makeToy();
+        //    toyStick.makeToy();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
 
