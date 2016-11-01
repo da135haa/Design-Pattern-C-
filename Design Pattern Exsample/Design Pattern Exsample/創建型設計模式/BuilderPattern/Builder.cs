@@ -2,7 +2,7 @@
 
 
 //Builder Pattern [產生器模式]
-namespace Design_Pattern_Exsample.AbstractFactoryPattern
+namespace Design_Pattern_Exsample.BuilderPattern
 {
     /*
          分成建造者和被建造的物件
@@ -13,23 +13,23 @@ namespace Design_Pattern_Exsample.AbstractFactoryPattern
     */
     class Builder
     {
-        static void Main(string[] args)
-        {
-            BuilderManager builderManger = new BuilderManager();//建立的創建者
-            People people;
+        //static void Main(string[] args)
+        //{
+        //    BuilderManager builderManger = new BuilderManager();//建立的創建者
+        //    People people;
 
-            people = new Swordsman();//經由建立實體的物件不同,所執行的一系列動作也會不相同
-            builderManger.setPeople(people);
-            builderManger.PeopleGo();
+        //    people = new Swordsman();//經由建立實體的物件不同,所執行的一系列動作也會不相同
+        //    builderManger.setPeople(people);
+        //    builderManger.PeopleGo();
 
-            Console.WriteLine("-------------------------");
+        //    Console.WriteLine("-------------------------");
 
-            people = new Magician();
-            builderManger.setPeople(people);
-            builderManger.PeopleGo();
+        //    people = new Magician();
+        //    builderManger.setPeople(people);
+        //    builderManger.PeopleGo();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     //建造者
