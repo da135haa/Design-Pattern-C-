@@ -23,24 +23,24 @@ namespace Design_Pattern_Exsample.PrototypePattern
     */
     class Prototype
     {
-        static void Main(string[] args)
-        {
-            Resume a = new Resume("kero小柯");
-            a.SetPersonalInfo("男", "25");
-            a.SetWorkExperience("2011-2012", "IT公司");
+        //static void Main(string[] args)
+        //{
+        //    Resume a = new Resume("kero小柯");
+        //    a.SetPersonalInfo("男", "25");
+        //    a.SetWorkExperience("2011-2012", "IT公司");
 
-            Resume b = (Resume)a.Clone();
-            b.SetWorkExperience("2012-2014", "IT創業");
+        //    Resume b = (Resume)a.Clone();
+        //    b.SetWorkExperience("2012-2014", "IT創業");
 
-            Resume c = (Resume)a.Clone();
-            c.SetWorkExperience("2014-2015", "IT經理");
+        //    Resume c = (Resume)a.Clone();
+        //    c.SetWorkExperience("2014-2015", "IT經理");
 
-            a.Display();
-            b.Display();
-            c.Display();
+        //    a.Display();
+        //    b.Display();
+        //    c.Display();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
   
     //履歷
