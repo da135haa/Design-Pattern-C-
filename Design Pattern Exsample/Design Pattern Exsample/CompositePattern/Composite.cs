@@ -17,33 +17,33 @@ namespace Design_Pattern_Exsample.CompositePattern
 
     class Composite
     {
-        static void Main(string[] args)
-        {
-            CompositeMenu compositeMenu = new CompositeMenu("資料表");
+        //static void Main(string[] args)
+        //{
+        //    CompositeMenu compositeMenu = new CompositeMenu("資料表");
 
-            CompositeMenu compositeMenuA = new CompositeMenu("A表單");
-            compositeMenuA.add(new Element("Steven"));
-            compositeMenuA.add(new Element("Elsa"));
-            compositeMenuA.add(new Element("強生"));
+        //    CompositeMenu compositeMenuA = new CompositeMenu("A表單");
+        //    compositeMenuA.add(new Element("Steven"));
+        //    compositeMenuA.add(new Element("Elsa"));
+        //    compositeMenuA.add(new Element("強生"));
 
-            CompositeMenu compositeMenuB = new CompositeMenu("B表單");
-            compositeMenuB.add(new Element("大頭"));
-            compositeMenuB.add(new Element("小華"));
-            compositeMenuB.add(new Element("阿明"));
-            compositeMenuB.add(new Element("小詹"));
+        //    CompositeMenu compositeMenuB = new CompositeMenu("B表單");
+        //    compositeMenuB.add(new Element("大頭"));
+        //    compositeMenuB.add(new Element("小華"));
+        //    compositeMenuB.add(new Element("阿明"));
+        //    compositeMenuB.add(new Element("小詹"));
 
-            CompositeMenu compositeMenuBB = new CompositeMenu("B表單分頁");
-            compositeMenuBB.add(new Element("報到新生"));
-            compositeMenuB.add(compositeMenuBB);
+        //    CompositeMenu compositeMenuBB = new CompositeMenu("B表單分頁");
+        //    compositeMenuBB.add(new Element("報到新生"));
+        //    compositeMenuB.add(compositeMenuBB);
 
 
-            compositeMenu.add(compositeMenuA);
-            compositeMenu.add(compositeMenuB);
+        //    compositeMenu.add(compositeMenuA);
+        //    compositeMenu.add(compositeMenuB);
 
-            compositeMenu.print();
+        //    compositeMenu.print();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 }
 
