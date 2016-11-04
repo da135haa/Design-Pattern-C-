@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BridgePattern\Bridge.cs" />
     <Compile Include="CompositePattern\Composite.cs" />
     <Compile Include="ObserverPattern\Observer.cs" />
     <Compile Include="創建型設計模式\PrototypePattern\Prototype.cs" />

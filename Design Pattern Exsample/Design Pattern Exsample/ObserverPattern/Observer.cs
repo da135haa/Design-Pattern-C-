@@ -14,26 +14,26 @@ namespace Design_Pattern_Exsample.ObserverPattern
     */
     class Observer
     {
-        static void Main(string[] args)
-        {
-            Hospital hospital = new Hospital();
+        //static void Main(string[] args)
+        //{
+        //    Hospital hospital = new Hospital();
 
-            hospital.Add(new Doctors("小名"));
-            hospital.Add(new Doctors("Steven"));
-            hospital.Add(new Doctors("阿華"));
-            hospital.Add(new Doctors("建宏"));
+        //    hospital.Add(new Doctors("小名"));
+        //    hospital.Add(new Doctors("Steven"));
+        //    hospital.Add(new Doctors("阿華"));
+        //    hospital.Add(new Doctors("建宏"));
 
-            hospital.Add(new Enginner("姍姍"));
-            hospital.Add(new Enginner("大頭"));
+        //    hospital.Add(new Enginner("姍姍"));
+        //    hospital.Add(new Enginner("大頭"));
 
-            Enginner e = new Enginner("小詹");//要是物件還需要刪除,不能使用匿名,不然刪除時會找不到
-            hospital.Add(e);
-            hospital.Remove(e);
+        //    Enginner e = new Enginner("小詹");//要是物件還需要刪除,不能使用匿名,不然刪除時會找不到
+        //    hospital.Add(e);
+        //    hospital.Remove(e);
 
-            hospital.Notify();
+        //    hospital.Notify();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     abstract class ObserverManager//使用繼承的方式建立主題,好處可以建立各種不同的主題,使用abstract雖然不能直接用,但可以先將方法寫好使code不需要重寫
