@@ -17,20 +17,20 @@ namespace Design_Pattern_Exsample.BridgePattern
     */
     class Bridge
     {
-        static void Main(string[] args)
-        {
-            RemoteControl remoteControl = new RemoteControl(new ChangHong());//一個萬用的遙控器控制了ChangHong電視
-            remoteControl.Off();
-            remoteControl.On();
-            remoteControl.NextChannel();
+        //static void Main(string[] args)
+        //{
+        //    RemoteControl remoteControl = new RemoteControl(new ChangHong());//一個萬用的遙控器控制了ChangHong電視
+        //    remoteControl.Off();
+        //    remoteControl.On();
+        //    remoteControl.NextChannel();
 
-            remoteControl = new RemoteControl(new Samsung());//Samsung
-            remoteControl.Off();
-            remoteControl.On();
-            remoteControl.NextChannel();
+        //    remoteControl = new RemoteControl(new Samsung());//Samsung
+        //    remoteControl.Off();
+        //    remoteControl.On();
+        //    remoteControl.NextChannel();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     //一個電視的抽象類,會有各種基本功能
