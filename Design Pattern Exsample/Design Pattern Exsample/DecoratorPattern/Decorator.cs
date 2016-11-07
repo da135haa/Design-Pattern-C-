@@ -62,7 +62,7 @@ namespace Design_Pattern_Exsample.DecoratorPattern
     //使用一個報表當做範例
 
     //<summary>
-    //最原始的父類，未來會持續加工判斷的方法是Show、DownLoad
+    //最原始的父類，所以這代表未來會持續加工判斷的方法是Show、DownLoad
     //</summary>
     public interface Component
     {

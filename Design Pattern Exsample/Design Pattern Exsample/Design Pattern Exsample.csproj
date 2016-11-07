@@ -46,6 +46,7 @@
     <Compile Include="BridgePattern\Bridge.cs" />
     <Compile Include="CompositePattern\Composite.cs" />
     <Compile Include="DecoratorPattern\Decorator.cs" />
+    <Compile Include="FacadePattern\Facade.cs" />
     <Compile Include="ObserverPattern\Observer.cs" />
     <Compile Include="創建型設計模式\PrototypePattern\Prototype.cs" />
     <Compile Include="創建型設計模式\BuilderPattern\Builder.cs" />
