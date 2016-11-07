@@ -1,16 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.IO.Compression;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-//http://www.cnblogs.com/zhili/p/DecoratorPattern.html
-//https://dotblogs.com.tw/ricochen/2012/08/02/73783
-//http://xyz.cinc.biz/2013/05/decorator-pattern.html
-
 
 //Decorator Pattern [裝飾模式]
 namespace Design_Pattern_Exsample.DecoratorPattern
@@ -32,110 +20,104 @@ namespace Design_Pattern_Exsample.DecoratorPattern
         缺點:過度使用時,會有一大推的小對象類別出現,讓程序變得更複雜
 
         架構技巧在於不管是「被裝飾者」or「裝飾者」都會"共同繼承於一個父類",使它們可以被共用
+        (因為裝飾物品功能套件可能是"直接面對被裝飾者"或是"接在其它裝飾者之後")
 
-        此模式會使用到的類型物件有:主要物件、裝飾物品的功能物件
+        此模式會使用到的類型物件有:主要物件、當成裝飾物品的功能物件
 
+        此模式就是會在最初的父類class中設定方法,後面繼承的子類別再由功能各自＂加工那些方法＂,需要用時一層層建立實體套入即可
+        
+        而裝飾者物件放入建構物件這個動作代表著＂接在xxx物件之後＂，有一點Callback的感覺在裡面,這邊概念需要多思考一下才會清楚
     */
 
     class Decorator
     {
         static void Main(string[] args)
         {
-            IReportControl myreport = new SimpleReportControl();
-            ReportDecorator checkauth = new Authority(myreport) { Name = "rico" };
-            ReportDecorator checksysdate = new SystemDate(checkauth);
-            checkauth.Show();
-            checksysdate.Show();
-            checkauth.DownLoad();
+            //最基本的報表,沒有任何判定
+            SimpleReport simpleReport = new SimpleReport();
+            simpleReport.Show();
+            Console.WriteLine("");
+            simpleReport.DownLoad();
 
+            Console.WriteLine("--------------------------------------");
 
+            //增加名子判定
+            Authority authority = new Authority(simpleReport, "Steven");
+            authority.Show();
+            Console.WriteLine("");
+            authority.DownLoad();
 
-            MemoryStream memoryStream = new MemoryStream(new byte[] { 95, 96, 97, 98, 99 });
+            Console.WriteLine("--------------------------------------");
 
-            // 扩展缓冲的功能
-            BufferedStream buffStream = new BufferedStream(memoryStream);
-
-            // 添加加密的功能
-            CryptoStream cryptoStream = new CryptoStream(memoryStream, new AesManaged().CreateEncryptor(), CryptoStreamMode.Write);
-            // 添加压缩功能
-            GZipStream gzipStream = new GZipStream(memoryStream, CompressionMode.Compress, true);
-
+            //像這樣將時間判定接在authority之後,這樣所執行的順序會是  時間判定過了 > 名子判定過了 > 表單內容
+            SystemDate systemDate = new SystemDate(authority);
+            systemDate.Show();
+            Console.WriteLine("");
+            systemDate.DownLoad();
 
             Console.ReadLine();
         }
     }
 
+    //使用一個報表當做範例
 
-    /// <summary>
-    /// 報表介面
-    /// </summary>
-    public interface IReportControl
+    //<summary>
+    //最原始的父類，未來會持續加工判斷的方法是Show、DownLoad
+    //</summary>
+    public interface Component
     {
         void Show();
-
         void DownLoad();
     }
 
-
-    /// <summary>
-    /// 被裝飾者 
-    /// </summary>
-    public class SimpleReportControl : IReportControl
+    // <summary>
+    // 被裝飾者 　跟裝飾者套件"最大的差別在於沒有建構子"（意味者不會接在別人之後）　　這邊代表報表本身
+    // </summary>
+    public class SimpleReport : Component
     {
         public void Show()
         {
-            Console.WriteLine("顯示報表");
+            Console.WriteLine("展示報表");
         }
-
         public void DownLoad()
         {
             Console.WriteLine("下載報表");
         }
-
     }
 
-
-
-
-    /// <summary>
-    /// 裝飾者
-    /// </summary>
-    public abstract class ReportDecorator : IReportControl
+    // <summary>
+    // 裝飾者 　先繼承一個成有建構子的父類,後面再做擴充 設置Show和DownLoad可以被複寫
+    // </summary>
+    public class ReportDecorator : Component
     {
-        private IReportControl _IReportControl;
+        private Component component;
 
-        public ReportDecorator(IReportControl ireportControl)
+        public ReportDecorator(Component component)
         {
-            this._IReportControl = ireportControl;
+            this.component = component;
         }
-
-        #region 虛擬方法
 
         public virtual void Show()
         {
-            this._IReportControl.Show();
+            component.Show();
         }
-
         public virtual void DownLoad()
         {
-            this._IReportControl.DownLoad();
+            component.DownLoad();
         }
-
-        #endregion
     }
 
-
-
-
-    /// <summary>
-    /// 擴充權限檢查(負責幫裝飾者新增方法)
-    /// </summary>
+    // <summary>
+    // 各種功能的套件
+    // </summary>
     public class Authority : ReportDecorator
     {
-        public string Name { get; set; }
-        public Authority(IReportControl ireportControl)
-            : base(ireportControl)
+        //權限判定套件
+        private string name { get; set; }
+
+        public Authority(Component component,string name):base(component)
         {
+            this.name = name;
         }
 
         public override void Show()
@@ -148,7 +130,6 @@ namespace Design_Pattern_Exsample.DecoratorPattern
             else
                 Console.WriteLine("無相關權限");
         }
-
         public override void DownLoad()
         {
             if (CheckAut())
@@ -160,30 +141,24 @@ namespace Design_Pattern_Exsample.DecoratorPattern
                 Console.WriteLine("無相關權限");
         }
 
-        #region 權限檢查
         public bool CheckAut()
         {
-            if (this.Name == "rico")
+            if (this.name == "Steven")
                 return true;
             else
                 return false;
         }
-        #endregion       
     }
 
 
-
-
-    /// <summary>
-    /// 擴充系統日期檢查(負責幫裝飾者新增方法)
-    /// </summary>
     public class SystemDate : ReportDecorator
     {
-        public SystemDate(IReportControl ireportControl)
-            : base(ireportControl)
+        public SystemDate(Component component):base(component)//C#規則,父類有寫建構需要手動選則
         {
+
         }
 
+        //時間判定套件
         public override void Show()
         {
             if (CheckSysDate())
@@ -192,25 +167,25 @@ namespace Design_Pattern_Exsample.DecoratorPattern
                 base.Show();
             }
             else
-                Console.WriteLine("系統日期小於30");
+                Console.WriteLine("系統日期小於5");     
         }
-
         public override void DownLoad()
         {
-            base.DownLoad();
+            if (CheckSysDate())
+            {
+                Console.WriteLine("系統日期檢查正常");
+                base.DownLoad();
+            }
+            else
+                Console.WriteLine("系統日期小於5");          
         }
-
-        #region 系統日期檢查
 
         public bool CheckSysDate()
         {
-            if (DateTime.Today.Day >= 30)
+            if (DateTime.Today.Day >= 5)
                 return true;
             else
                 return false;
         }
-
-        #endregion      
     }
-
 }
