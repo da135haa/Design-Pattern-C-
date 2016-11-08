@@ -31,32 +31,32 @@ namespace Design_Pattern_Exsample.DecoratorPattern
 
     class Decorator
     {
-        static void Main(string[] args)
-        {
-            //最基本的報表,沒有任何判定
-            SimpleReport simpleReport = new SimpleReport();
-            simpleReport.Show();
-            Console.WriteLine("");
-            simpleReport.DownLoad();
+        //static void Main(string[] args)
+        //{
+        //    //最基本的報表,沒有任何判定
+        //    SimpleReport simpleReport = new SimpleReport();
+        //    simpleReport.Show();
+        //    Console.WriteLine("");
+        //    simpleReport.DownLoad();
 
-            Console.WriteLine("--------------------------------------");
+        //    Console.WriteLine("--------------------------------------");
 
-            //增加名子判定
-            Authority authority = new Authority(simpleReport, "Steven");
-            authority.Show();
-            Console.WriteLine("");
-            authority.DownLoad();
+        //    //增加名子判定
+        //    Authority authority = new Authority(simpleReport, "Steven");
+        //    authority.Show();
+        //    Console.WriteLine("");
+        //    authority.DownLoad();
 
-            Console.WriteLine("--------------------------------------");
+        //    Console.WriteLine("--------------------------------------");
 
-            //像這樣將時間判定接在authority之後,這樣所執行的順序會是  時間判定過了 > 名子判定過了 > 表單內容
-            SystemDate systemDate = new SystemDate(authority);
-            systemDate.Show();
-            Console.WriteLine("");
-            systemDate.DownLoad();
+        //    //像這樣將時間判定接在authority之後,這樣所執行的順序會是  時間判定過了 > 名子判定過了 > 表單內容
+        //    SystemDate systemDate = new SystemDate(authority);
+        //    systemDate.Show();
+        //    Console.WriteLine("");
+        //    systemDate.DownLoad();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     //使用一個報表當做範例
