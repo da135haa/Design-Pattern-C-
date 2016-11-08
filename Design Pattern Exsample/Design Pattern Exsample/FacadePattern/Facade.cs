@@ -17,16 +17,16 @@ namespace Design_Pattern_Exsample.FacadePattern
 
     class Facade
     {
-        static void Main(string[] args)
-        {
-            //只需要操控一個物件就可以使用各種功能
-            InternetManager internet = new InternetManager();
-            internet.http.GetHttp();
-            internet.json.ToJson("test");
-            internet.socket.GetSocket();
+        //static void Main(string[] args)
+        //{
+        //    //只需要操控一個物件就可以使用各種功能
+        //    InternetManager internet = new InternetManager();
+        //    internet.http.GetHttp();
+        //    internet.json.ToJson("test");
+        //    internet.socket.GetSocket();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     //集結一些網路會用到的工具
