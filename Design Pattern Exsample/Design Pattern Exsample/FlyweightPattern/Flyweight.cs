@@ -16,21 +16,21 @@ namespace Design_Pattern_Exsample.FlyweightPattern
     */
     class Flyweight
     {
-        static void Main(string[] args)
-        {
-            Hero warrior_A = new Hero("Steven", 5, 9, 1);
-            Hero warrior_B = new Hero("大頭", 3, 1, 1);
-            Hero Master_A = new Hero("宅男", 8, 7, 2);
+        //static void Main(string[] args)
+        //{
+        //    Hero warrior_A = new Hero("Steven", 5, 9, 1);
+        //    Hero warrior_B = new Hero("大頭", 3, 1, 1);
+        //    Hero Master_A = new Hero("宅男", 8, 7, 2);
 
 
-            warrior_A.ShowMessage();
-            Console.WriteLine();
-            warrior_B.ShowMessage();
-            Console.WriteLine();
-            Master_A.ShowMessage();
+        //    warrior_A.ShowMessage();
+        //    Console.WriteLine();
+        //    warrior_B.ShowMessage();
+        //    Console.WriteLine();
+        //    Master_A.ShowMessage();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     //照片的部份因為消耗資源過大,所以使用享元模式來達成重複利用的方式
