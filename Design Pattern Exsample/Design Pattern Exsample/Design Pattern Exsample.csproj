@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterPattern\Adapter.cs" />
     <Compile Include="BridgePattern\Bridge.cs" />
     <Compile Include="CompositePattern\Composite.cs" />
     <Compile Include="DecoratorPattern\Decorator.cs" />
