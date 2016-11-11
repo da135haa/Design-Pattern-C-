@@ -27,17 +27,17 @@ namespace Design_Pattern_Exsample.ProxyPattern
 
     class Proxy
     {
-        static void Main(string[] args)
-        {
-            //這邊只需要建立Proxy物件並且執行需要的功能,不需要自行建立其它物件
-            ProxyImage image = new ProxyImage("Steven","test.jpg");
-            image.display();
+        //static void Main(string[] args)
+        //{
+        //    //這邊只需要建立Proxy物件並且執行需要的功能,不需要自行建立其它物件
+        //    ProxyImage image = new ProxyImage("Steven","test.jpg");
+        //    image.display();
 
-            image = new ProxyImage("大頭", "test.jpg");
-            image.display();
+        //    image = new ProxyImage("大頭", "test.jpg");
+        //    image.display();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
     public interface Image//最原始的介面
     {
