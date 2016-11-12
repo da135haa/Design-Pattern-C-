@@ -19,23 +19,23 @@ namespace Design_Pattern_Exsample.Memento_Pattern
     */
     class Memento
     {
-        static void Main(string[] args)
-        {
-            Hero play1 = new Hero(100, 10, 15);
-            StoragePoint storagePoint = new StoragePoint();
-            storagePoint.SaveHero(play1);
-            play1.ShowHero();//原本的數值
+        //static void Main(string[] args)
+        //{
+        //    Hero play1 = new Hero(100, 10, 15);
+        //    StoragePoint storagePoint = new StoragePoint();
+        //    storagePoint.SaveHero(play1);
+        //    play1.ShowHero();//原本的數值
 
-            play1.hp -= 20;
-            play1.sp -= 10;
+        //    play1.hp -= 20;
+        //    play1.sp -= 10;
 
-            play1.ShowHero();
-            storagePoint.LoadHero(play1);
+        //    play1.ShowHero();
+        //    storagePoint.LoadHero(play1);
 
-            play1.ShowHero();//因為物件都是傳址呼叫的關係,數值已經直接被更改了
+        //    play1.ShowHero();//因為物件都是傳址呼叫的關係,數值已經直接被更改了
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     class Hero
