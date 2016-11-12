@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="IteratorPattern\Iterator.cs" />
     <Compile Include="Memento Pattern\Memento.cs" />
+    <Compile Include="Template Method Pattern\TemplateMethod.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\AdapterPattern\Adapter.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\BridgePattern\Bridge.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\CompositePattern\Composite.cs" />

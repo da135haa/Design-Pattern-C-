@@ -13,25 +13,25 @@ namespace Design_Pattern_Exsample.IteratorPattern
     */
     class Iterator
     {
-        static void Main(string[] args)
-        {
-            MyIntList list = new MyIntList();
-            list.Add(2);
-            list.Add(4);
-            list.Add(6);
-            list.Add(9);
+        //static void Main(string[] args)
+        //{
+        //    MyIntList list = new MyIntList();
+        //    list.Add(2);
+        //    list.Add(4);
+        //    list.Add(6);
+        //    list.Add(9);
 
-            IteratorOrigin iterator = list.GetIterator();//取得這個集合的迭代器
+        //    IteratorOrigin iterator = list.GetIterator();//取得這個集合的迭代器
 
-            while (iterator.MoveNext())//運用跟該迭代器有關的功能
-            {
-                int i = (int)iterator.GetCurrent();
-                Console.WriteLine(i.ToString());
-                iterator.Next();
-            }
+        //    while (iterator.MoveNext())//運用跟該迭代器有關的功能
+        //    {
+        //        int i = (int)iterator.GetCurrent();
+        //        Console.WriteLine(i.ToString());
+        //        iterator.Next();
+        //    }
 
-            Console.ReadLine();          
-        }
+        //    Console.ReadLine();          
+        //}
     }
 
     // 一個跟檢查整個集合對象有相關的功能,迭代器的介面
