@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Index.cs" />
     <Compile Include="Interpreter Pattern\Interpreter.cs" />
     <Compile Include="IteratorPattern\Iterator.cs" />
     <Compile Include="Memento Pattern\Memento.cs" />
@@ -61,7 +62,6 @@
     <Compile Include="CommandPattern\Command.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\FactoryMethodPattern\FactoryMethod.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\FactoryPattern\Factory.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\SingletonPattern\Singleton.cs" />
     <Compile Include="StatePattern\State.cs" />
