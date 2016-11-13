@@ -16,14 +16,15 @@ namespace Design_Pattern_Exsample.Template_Method_Pattern
     */
     class TemplateMethod
     {
-        static void Main(string[] args)
-        {
-            Loan loan = new Loan();//使用貸款的物件
-            loan.Process();
+        //static void Main(string[] args)
+        //{
+        //    Loan loan = new Loan();//使用貸款的物件
+        //    loan.Process();
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
+
     //一個最原始的抽象類
     public abstract class Bank
     {

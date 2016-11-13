@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interpreter Pattern\Interpreter.cs" />
     <Compile Include="IteratorPattern\Iterator.cs" />
     <Compile Include="Memento Pattern\Memento.cs" />
     <Compile Include="Template Method Pattern\TemplateMethod.cs" />
