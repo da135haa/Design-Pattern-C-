@@ -1,12 +1,19 @@
 ﻿/*
 物件導向程式設計的基本原則(1~5又稱 SOLID)
 1.單一職責原則 (SRP：Single Responsibility Principle)
-一個類別，應該只有一個引起它變化的原因
+在物件導向的觀念裡，一個良好的程式設計應該俱備「低耦合、高内聚」的關係，而這個原則可以幫助我們完成這些。
+當一個物件他俱備了過多的功能(職責)的時候，意味著他有可能因為各種需求變動進而影響到整個類別的變動，在物件導向觀念裡這個應該是被避免的。
+http://programmerrueinotes.blogspot.tw/2014/09/srpsingle-responsibility-principle.html
+
 2.開放、封閉原則 (OCP：Open Closed Principle)
 對於擴展是開放的 (open for extension)
 對於修改是封閉的 (closed for modification)
+http://programmerrueinotes.blogspot.tw/2015/10/ocpopen-closed-principle.html
+
 3.里氏(Liskov)代換原則 (LSP：Liskov Substitution Principle)
 子類別必須能替換父類別。
+
+
 4.介面隔離原則 (ISP：Interface Segregation Principle)
 5.依賴倒轉原則 (DIP：Dependency Inversion Principle)
 抽象不應該依賴細節，細節應該依賴抽像。因為抽像相對較穩定。
