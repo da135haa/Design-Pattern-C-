@@ -27,13 +27,13 @@ namespace Design_Pattern_Exsample.Interpreter_Pattern
     */
     class Interpreter
     {
-        static void Main(string[] args)
-        {
-            string english = "This is an apple.";
-            string chinese = Translator.Translate(english);//翻譯機
-            Console.WriteLine(chinese);
-            Console.ReadLine();
-        }
+        //static void Main(string[] args)
+        //{
+        //    string english = "This is an apple.";
+        //    string chinese = Translator.Translate(english);//翻譯機
+        //    Console.WriteLine(chinese);
+        //    Console.ReadLine();
+        //}
     }
 
     //將各部分解釋器組合起來進行包裝，方便用戶調用(將句子拆分再從新組合的地方)。

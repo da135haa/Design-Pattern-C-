@@ -36,7 +36,7 @@ namespace Design_Pattern_Exsample.DecoratorPattern
         //    //最基本的報表,沒有任何判定
         //    SimpleReport simpleReport = new SimpleReport();
         //    simpleReport.Show();
-        //    Console.WriteLine("");
+        //    Console.WriteLine();
         //    simpleReport.DownLoad();
 
         //    Console.WriteLine("--------------------------------------");
@@ -44,7 +44,7 @@ namespace Design_Pattern_Exsample.DecoratorPattern
         //    //增加名子判定
         //    Authority authority = new Authority(simpleReport, "Steven");
         //    authority.Show();
-        //    Console.WriteLine("");
+        //    Console.WriteLine();
         //    authority.DownLoad();
 
         //    Console.WriteLine("--------------------------------------");
@@ -52,7 +52,7 @@ namespace Design_Pattern_Exsample.DecoratorPattern
         //    //像這樣將時間判定接在authority之後,這樣所執行的順序會是  時間判定過了 > 名子判定過了 > 表單內容
         //    SystemDate systemDate = new SystemDate(authority);
         //    systemDate.Show();
-        //    Console.WriteLine("");
+        //    Console.WriteLine();
         //    systemDate.DownLoad();
 
         //    Console.ReadLine();

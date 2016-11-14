@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chain-of-responsibilityPattern\Chain-of-responsibility.cs" />
     <Compile Include="Index.cs" />
-    <Compile Include="Interpreter Pattern\Interpreter.cs" />
+    <Compile Include="InterpreterPattern\Interpreter.cs" />
     <Compile Include="IteratorPattern\Iterator.cs" />
-    <Compile Include="Memento Pattern\Memento.cs" />
-    <Compile Include="Template Method Pattern\TemplateMethod.cs" />
+    <Compile Include="MediatorPattern\Mediator.cs" />
+    <Compile Include="MementoPattern\Memento.cs" />
+    <Compile Include="TemplateMethodPattern\TemplateMethod.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\AdapterPattern\Adapter.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\BridgePattern\Bridge.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\CompositePattern\Composite.cs" />

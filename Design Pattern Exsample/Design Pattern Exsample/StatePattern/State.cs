@@ -85,7 +85,7 @@ namespace Design_Pattern_Exsample.StatePattern
             }
            else
             {
-                user.setStateContext(new StateTtest2());//當條件都不符合時,就轉向下一個class
+                user.setStateContext(new StateTtest2());//當條件都不符合時,就丟給下一個class
                 user.stateWork();
             }
         }
@@ -113,6 +113,11 @@ namespace Design_Pattern_Exsample.StatePattern
             if (user.level > 10)
             {
                 Console.WriteLine("等級高於10,新手");
+            }
+            else
+            {
+                user.setStateContext(new StateTtest4());
+                user.stateWork();
             }
 
         }
