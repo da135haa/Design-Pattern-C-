@@ -9,15 +9,15 @@ namespace Design_Pattern_Exsample.Chain_of_responsibilityPattern
     */
     class Chain_of_responsibility
     {
-        static void Main(string[] args)
-        {
-            Player player = new Player();
-            player.StateWork(60);//輸入等級
-            player.StateWork(23);
-            player.StateWork(101);
+        //static void Main(string[] args)
+        //{
+        //    Player player = new Player();
+        //    player.StateWork(60);//輸入等級
+        //    player.StateWork(23);
+        //    player.StateWork(101);
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
 
     public class Player//負責組裝責任鏈的面相Clien類

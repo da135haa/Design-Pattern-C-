@@ -43,31 +43,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chain-of-responsibilityPattern\Chain-of-responsibility.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\Chain-of-responsibilityPattern\Chain-of-responsibility.cs" />
     <Compile Include="Index.cs" />
-    <Compile Include="InterpreterPattern\Interpreter.cs" />
-    <Compile Include="IteratorPattern\Iterator.cs" />
-    <Compile Include="MediatorPattern\Mediator.cs" />
-    <Compile Include="MementoPattern\Memento.cs" />
-    <Compile Include="TemplateMethodPattern\TemplateMethod.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\InterpreterPattern\Interpreter.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\IteratorPattern\Iterator.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\MediatorPattern\Mediator.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\MementoPattern\Memento.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\TemplateMethodPattern\TemplateMethod.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\VisitorPattern\Visitor.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\AdapterPattern\Adapter.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\BridgePattern\Bridge.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\CompositePattern\Composite.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\DecoratorPattern\Decorator.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\FacadePattern\Facade.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\FlyweightPattern\Flyweight.cs" />
-    <Compile Include="ObserverPattern\Observer.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\ObserverPattern\Observer.cs" />
     <Compile Include="結構型設計模式%28Structural Pattern%29\ProxyPattern\Proxy.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\PrototypePattern\Prototype.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\BuilderPattern\Builder.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\AbstractFactoryPattern\AbstractFactory.cs" />
-    <Compile Include="CommandPattern\Command.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\CommandPattern\Command.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\FactoryMethodPattern\FactoryMethod.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\FactoryPattern\Factory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="創建型設計模式%28Creational Pattern%29\SingletonPattern\Singleton.cs" />
-    <Compile Include="StatePattern\State.cs" />
-    <Compile Include="StrategyPattern\Strategy.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\StatePattern\State.cs" />
+    <Compile Include="行為型模式%28Behavioral pattern%29\StrategyPattern\Strategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
