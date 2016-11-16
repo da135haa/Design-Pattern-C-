@@ -1,7 +1,7 @@
 ﻿using System;
 
 //State Pattern[狀態模式] 
-namespace Design_Pattern_Exsample.StatePattern
+namespace Design_Pattern_Example.StatePattern
 {
 
     //參考http://xyz.cinc.biz/2013/07/state-pattern.html

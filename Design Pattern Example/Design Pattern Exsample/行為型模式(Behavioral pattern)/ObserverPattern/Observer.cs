@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Observer Pattern [觀察者模式]
-namespace Design_Pattern_Exsample.ObserverPattern
+namespace Design_Pattern_Example.ObserverPattern
 {
     /*
         流程上是會有一個"主題"和多個"觀察者"

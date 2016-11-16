@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Factory Pattern [簡單工廠模式]
-namespace Design_Pattern_Exsample.FactoryPattern
+namespace Design_Pattern_Example.FactoryPattern
 {
     /*
     跟Singleton有點像,但是多了每次使用都要指定要用哪個物件

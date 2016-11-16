@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Composite Pattern [組合模式]
-namespace Design_Pattern_Exsample.CompositePattern
+namespace Design_Pattern_Example.CompositePattern
 {
     /*
         用於建立一組樹狀的結構、可以依照自己的用途規劃

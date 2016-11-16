@@ -2,7 +2,7 @@
 
 
 //Prototype Pattern [原型模式]
-namespace Design_Pattern_Exsample.PrototypePattern
+namespace Design_Pattern_Example.PrototypePattern
 {
     /*
         重點在於Clone,讓一個已經制定好屬性的物件可以直接Clone一個,而不需要重新設定屬性等細節  (屬於深拷貝)

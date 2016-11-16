@@ -2,7 +2,7 @@
 
 
 //Builder Pattern [產生器模式]
-namespace Design_Pattern_Exsample.BuilderPattern
+namespace Design_Pattern_Example.BuilderPattern
 {
     /*
          分成建造者和被建造的物件

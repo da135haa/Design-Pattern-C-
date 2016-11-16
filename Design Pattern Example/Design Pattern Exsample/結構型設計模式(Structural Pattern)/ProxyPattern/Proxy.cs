@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Proxy Pattern [代理模式]
-namespace Design_Pattern_Exsample.ProxyPattern
+namespace Design_Pattern_Example.ProxyPattern
 {
     /*
         在訪問和被訪問者之間建立一個中間層,這層控制能不能被訪問、是否創造物件等相關功能

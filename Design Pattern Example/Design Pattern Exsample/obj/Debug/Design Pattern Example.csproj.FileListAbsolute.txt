@@ -1,0 +1,6 @@
+C:\Users\stevenliu\Desktop\Design-Pattern-C#\Design Pattern Example\Design Pattern Exsample\bin\Debug\Design Pattern Exsample.exe.config
+C:\Users\stevenliu\Desktop\Design-Pattern-C#\Design Pattern Example\Design Pattern Exsample\bin\Debug\Design Pattern Exsample.exe
+C:\Users\stevenliu\Desktop\Design-Pattern-C#\Design Pattern Example\Design Pattern Exsample\bin\Debug\Design Pattern Exsample.pdb
+C:\Users\stevenliu\Desktop\Design-Pattern-C#\Design Pattern Example\Design Pattern Exsample\obj\Debug\Design Pattern Example.csprojResolveAssemblyReference.cache
+C:\Users\stevenliu\Desktop\Design-Pattern-C#\Design Pattern Example\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.exe
+C:\Users\stevenliu\Desktop\Design-Pattern-C#\Design Pattern Example\Design Pattern Exsample\obj\Debug\Design Pattern Exsample.pdb

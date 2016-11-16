@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Facade Pattern [外觀模式]
-namespace Design_Pattern_Exsample.FacadePattern
+namespace Design_Pattern_Example.FacadePattern
 {
     /*
         各個功能class和User中間會有一個外觀的class,負責將各個功能建立物件出來,而User只需要操控外觀class就可以控制各個功能

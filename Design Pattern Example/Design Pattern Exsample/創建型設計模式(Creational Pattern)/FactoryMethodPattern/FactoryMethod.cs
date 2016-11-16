@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Factory Method Pattern [工廠方法模式]
-namespace Design_Pattern_Exsample.FactoryMethodPattern
+namespace Design_Pattern_Example.FactoryMethodPattern
 {
     /*
         在簡單工廠模式中,會因為種類變多而變得更複雜,耦合度會相對提高,為了應付這個問題,我們將建置的工廠再切分成各個小類

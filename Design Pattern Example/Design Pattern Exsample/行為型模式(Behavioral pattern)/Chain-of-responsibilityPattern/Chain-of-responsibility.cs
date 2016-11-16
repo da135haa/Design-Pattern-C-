@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Chain_of_responsibility Pattern [責任鏈模式]
-namespace Design_Pattern_Exsample.Chain_of_responsibilityPattern
+namespace Design_Pattern_Example.Chain_of_responsibilityPattern
 {
     /*
         跟狀態模式極為相似,差別只在於"責任鏈模式"是將串連的動作放在Clien端做,但"狀態模式"卻是已經封裝在每個類別中

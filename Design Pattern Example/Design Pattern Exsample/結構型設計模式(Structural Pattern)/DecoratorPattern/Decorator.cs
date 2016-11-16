@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Decorator Pattern [裝飾模式]
-namespace Design_Pattern_Exsample.DecoratorPattern
+namespace Design_Pattern_Example.DecoratorPattern
 {
     /* 
         此模式可以在物件上動態的加上其它功能物件,就像"增加資料片"的那種感覺

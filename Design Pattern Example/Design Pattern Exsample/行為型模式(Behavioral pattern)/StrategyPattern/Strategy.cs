@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Strategy Pattern[策略模式]
-namespace Design_Pattern_Exsample.StrategyPattern
+namespace Design_Pattern_Example.StrategyPattern
 {
     //參考https://dotblogs.com.tw/nobel12/2011/01/21/20947
 

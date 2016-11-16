@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 //Interpreter Pattern [解釋器模式]
-namespace Design_Pattern_Exsample.Interpreter_Pattern
+namespace Design_Pattern_Example.Interpreter_Pattern
 {
     /*
         只有滿足"有一套規則但頻繁變化"、"類似情況不斷出現"、"容易抽象為語法規則"的問題才適合使用此模式

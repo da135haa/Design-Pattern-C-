@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 //Visitor Pattern [訪問者模式]
-namespace Design_Pattern_Exsample.VisitorPattern
+namespace Design_Pattern_Example.VisitorPattern
 {
     /*
          http://blog.csdn.net/zhengzhb/article/details/7489639
@@ -16,17 +16,17 @@ namespace Design_Pattern_Exsample.VisitorPattern
     */
     class Visitor
     {
-        static void Main(string[] args)
-        {
-            Element element1 = new ConcreteElement1();//元素1和元素2  要增加第3個就很麻煩
-            Element element2 = new ConcreteElement2();
+        //static void Main(string[] args)
+        //{
+        //    Element element1 = new ConcreteElement1();//元素1和元素2  要增加第3個就很麻煩
+        //    Element element2 = new ConcreteElement2();
 
-            element1.accept(new Visitors());//呼叫訪問者,但訪問者其實也只是用自己的方法
-            element2.accept(new Visitors());
+        //    element1.accept(new Visitors());//呼叫訪問者,但訪問者其實也只是用自己的方法
+        //    element2.accept(new Visitors());
 
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
     }
  
     //訪問者的抽象

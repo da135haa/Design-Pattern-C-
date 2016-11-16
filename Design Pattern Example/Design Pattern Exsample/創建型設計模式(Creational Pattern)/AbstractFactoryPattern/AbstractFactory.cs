@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Abstract Factory Pattern [抽象工廠模式]
-namespace Design_Pattern_Exsample.AbstractFactoryPattern
+namespace Design_Pattern_Example.AbstractFactoryPattern
 {
     /*
         假設"同一種東西但卻有不同品牌",這時就會使用到這個設計模式

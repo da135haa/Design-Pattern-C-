@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Design_Pattern_Exsample.CommandPattern
+namespace Design_Pattern_Example.CommandPattern
 {
     /*
         好處:低耦合度,將請求給封裝起來,使用的時候會簡單方便

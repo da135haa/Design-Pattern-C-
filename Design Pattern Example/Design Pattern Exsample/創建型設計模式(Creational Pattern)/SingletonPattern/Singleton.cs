@@ -11,7 +11,7 @@ using System.Threading.Tasks;
     跟直接設定成static不同的部分:記憶體位置一個在stack 一個在heap    
     不是全部語言都有static
 */
-namespace Design_Pattern_Exsample.SingletonPattern
+namespace Design_Pattern_Example.SingletonPattern
 {
     //class main
     //{

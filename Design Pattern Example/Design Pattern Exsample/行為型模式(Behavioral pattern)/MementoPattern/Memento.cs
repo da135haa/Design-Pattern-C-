@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Memento Pattern [備忘錄模式]
-namespace Design_Pattern_Exsample.Memento_Pattern
+namespace Design_Pattern_Example.Memento_Pattern
 {
     /*
         記住目前的狀態,就像是遊戲存檔的紀錄點,讓我們需要時可以讀取回來

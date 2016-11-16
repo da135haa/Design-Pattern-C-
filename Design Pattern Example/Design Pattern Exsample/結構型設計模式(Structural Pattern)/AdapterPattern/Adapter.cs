@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Adapter Pattern [適配器模式]
-namespace Design_Pattern_Exsample.AdapterPattern
+namespace Design_Pattern_Example.AdapterPattern
 {
     /*
         轉接器故名思義，在真實世界中，我們常常會看到，像是三孔轉兩孔的電源插頭、不同國家電壓切換的旅行用轉接頭。透過轉接器的轉換，就可以讓不同的裝置取得電力或是資訊！

@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Mediator Pattern [中介者模式]
-namespace Design_Pattern_Exsample.MediatorPattern
+namespace Design_Pattern_Example.MediatorPattern
 {
     /*
         參考:https://wizardforcel.gitbooks.io/w3school-design-patterns/content/19.html

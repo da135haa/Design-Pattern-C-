@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Template Method Pattern [模板方法模式]
-namespace Design_Pattern_Exsample.Template_Method_Pattern
+namespace Design_Pattern_Example.Template_Method_Pattern
 {
     /*
         假設有一個固定的工作流程,但其中一個環節需要動態的,那就適合使用這個模式

@@ -1,7 +1,7 @@
 ﻿using System;
 
 //Iterator Pattern [迭代器模式]
-namespace Design_Pattern_Exsample.IteratorPattern
+namespace Design_Pattern_Example.IteratorPattern
 {
     /*
         針對"集合對象"而生的一種模式

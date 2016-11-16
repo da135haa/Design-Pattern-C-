@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Bridge Pattern [橋接模式]
-namespace Design_Pattern_Exsample.BridgePattern
+namespace Design_Pattern_Example.BridgePattern
 {
     /*
         使用的電視和遙控器的例子,遙控器可以操控電視,此設計模式的關鍵價值在於"遙控器"上面

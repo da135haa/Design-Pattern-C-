@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Flyweight Pattern [享元模式]
-namespace Design_Pattern_Exsample.FlyweightPattern
+namespace Design_Pattern_Example.FlyweightPattern
 {
     /*
         盡量使物件重複使用而不是生成新的物件出來,有助於降低記憶體的消耗
